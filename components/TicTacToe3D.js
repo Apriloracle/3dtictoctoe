@@ -110,28 +110,29 @@ const TicTacToe3D = () => {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900 text-white">
-      <h1 className="text-4xl font-bold mb-8">3D Tic-Tac-Toe</h1>
-      <div className="mb-4">
-        <button
-          className={`px-4 py-2 mr-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-400 ${
-            gameMode === 'human' ? 'bg-blue-500' : 'bg-gray-600'
-          }`}
-          onClick={() => {
-            setGameMode('human');
-            resetGame();
-          }}
-        >
-          Human vs Human
-        </button>
-        <button
-          className={`px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-400 ${
-            gameMode === 'computer' ? 'bg-blue-500' : 'bg-gray-600'
-          }`}
-          onClick={() => {
-            setGameMode('computer');
-            resetGame();
-          }}
-        >
+    <h1 className="text-4xl font-bold mb-8">3D Tic-Tac-Toe</h1>
+    <div className="mb-4">
+      <button
+        className={`px-4 py-2 mr-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-400 ${
+          gameMode === 'human' ? 'bg-blue-500' : 'bg-gray-600'
+        }`}
+        onClick={() => {
+          setGameMode('human');
+          resetGame();
+        }}
+      >
+        Human vs Human
+      </button>
+      <button
+        className={`px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-400 ${
+          gameMode === 'computer' ? 'bg-blue-500' : 'bg-gray-600'
+        }`}
+        onClick={() => {
+          setGameMode('computer');
+          resetGame();
+        }}
+      >
+      
           Human vs Computer
         </button>
       </div>
