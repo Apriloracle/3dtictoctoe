@@ -121,6 +121,8 @@ const TicTacToe3D = () => {
           resetGame();
         }}
       >
+<div className="custom-bg">
+</div>
         Human vs Human
       </button>
       <button
